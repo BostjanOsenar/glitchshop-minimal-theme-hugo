@@ -1,0 +1,1 @@
+# glitchshop-minimal-theme-hugo
