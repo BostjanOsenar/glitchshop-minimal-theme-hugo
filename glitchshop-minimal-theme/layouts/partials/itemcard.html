@@ -1,0 +1,13 @@
+        <div class="card">
+          {{ with .Params.featured }}
+          <img class="card-img img-fluid" src="{{ . }}" />
+          {{ end }}
+          <div class="card-block">
+            <p class="card-text lead">{{ .Description }}</p>
+            <h1 class="card-text"><a href="{{ .URL }}">{{ .Title }}</a></h1>
+            <p class="card-text">
+              {{ .Summary }}
+              <a href="{{ .URL }}">Read more <span class="fa fa-angle-double-right"></span></a>
+            </p>
+          </div>
+        </div>

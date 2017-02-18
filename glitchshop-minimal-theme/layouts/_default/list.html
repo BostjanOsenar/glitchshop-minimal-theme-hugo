@@ -1,0 +1,30 @@
+{{ partial "header.html" . }}
+    {{ partial "navigation.html" . }}
+    <div class="container">
+      
+      <!-- Title -->
+      <div class="page-header glitch-header">
+        <h1 class="display-4">{{ .Title }}</h1>
+      </div>
+
+      <!-- Main content -->
+      <div class="card-columns">
+        {{ range .Paginator.Pages }}
+        {{ partial "itemcard.html" . }}
+        {{ end }}
+      </div>
+
+      <!-- Pagination -->
+      {{ if gt .Paginator.TotalPages 1 }}
+      <p class="text-xs-center">      
+          {{ if .Paginator.HasNext }}
+          <a role="button" class="btn btn-lg btn-link" href="{{ .Paginator.Next.URL }}"><span class="fa fa-long-arrow-left"></span> Older posts</a>
+          {{ end }}
+          {{ if .Paginator.HasPrev }}
+          <a role="button" class="btn btn-lg btn-link" href="{{ .Paginator.Prev.URL }}">Newer posts <span class="fa fa-long-arrow-right"></span></a>
+          {{ end }}
+      </p>
+      {{ end }}
+
+    </div><!-- /.container -->
+{{ partial "footer.html" . }}

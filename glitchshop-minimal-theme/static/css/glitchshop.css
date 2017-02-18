@@ -1,0 +1,55 @@
+body {
+	background-color: #f7f7f7;
+	padding-top: 3rem;
+}
+
+.glitch-space-before {
+	padding-top: 1.5rem;
+}
+
+.glitch-space-after {
+	padding-bottom: 1.5rem;
+}
+
+
+.glitch-social {
+	word-spacing: 0.75rem;
+}
+
+.glitch-share {
+	word-spacing: 0.75rem;
+	line-height: 2.5rem;
+}
+
+
+.glitch-logo {
+	height: 2rem;
+}
+
+.glitch-header {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.glitch-footer {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.glitch-background-poster {
+	background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.glitch-background-none {
+	background-color: inherit; 
+}
+
+.glitch-text-white {
+	color: #ffffff;	
+}
+
+.glitch-text-shadow {
+    text-shadow: 0 1px 1px rgba(0,0,0,0.25), 0 1px 25px rgba(0,0,0,0.75);
+}
