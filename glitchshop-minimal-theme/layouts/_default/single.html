@@ -3,7 +3,7 @@
 	<!-- Title -->
 	<div class="page-header glitch-header">
 	  <div class="container">
-      <p class="text-sm-right">
+      <p class="text-right">
         <span class="fa fa-fw fa-calendar"></span>
         {{ .Date.Format "02 January 2006" }}
       </p>
@@ -23,12 +23,12 @@
   <!-- Content -->
   <div class="container">
     <div class="row align-items-start">
-      <div class="col-1">
+      <div class="col-12 col-lg-1">
         <!-- Share post -->
         {{ partial "share.html" . }}
       </div>
 
-      <div class="col-10">
+      <div class="col-12 col-lg-10">
         <!-- Post content -->
         {{ .Content }}
 
@@ -64,8 +64,8 @@
         </div>
       </div>
 
-      <div class="col-1">
-        <h3 class="text-sm-right"><a href="#comments"><i class="fa fa-comments-o"></i></a></h3>
+      <div class="hidden-md-down col-lg-1">
+        <h3 class="text-right"><a href="#comments"><i class="fa fa-comments-o"></i></a></h3>
       </div>
     </row>
   </div><!-- /.container -->
