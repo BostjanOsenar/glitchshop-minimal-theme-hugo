@@ -5,12 +5,12 @@
     {{ range first 1 (where .Data.Pages "Section" ( .Site.Params.home.projectsSection )) }}
     <div class="jumbotron jumbotron-fluid glitch-background-poster glitch-text-white" style="background-image:url('{{ .Site.BaseURL }}{{ .Param "featured" }}');">
       <div class="container">
-        <h3 class="display-4 text-sm-center glitch-text-shadow">{{ .Title }}</h3>
-        <p class="lead text-sm-center glitch-text-shadow">{{ .Description }}</p>
-        <div class="text-sm-center">
+        <h3 class="display-4 text-center glitch-text-shadow">{{ .Title }}</h3>
+        <p class="lead text-center glitch-text-shadow">{{ .Description }}</p>
+        <div class="text-center">
           <a href="{{ .URL }}" class="btn btn-primary btn-large">Read more <span class="fa fa-angle-double-right"></span></a>
         </div>
-        <p class="small muted lead glitch-space-before text-sm-right"><i class="fa fa-heart-o"></i> Featured project</p>
+        <p class="small muted lead glitch-space-before text-right"><i class="fa fa-heart-o"></i> Featured project</p>
       </div>
     </div>
     {{ end }}
@@ -18,7 +18,7 @@
      <!-- Index content -->
     {{ range where .Data.Pages.ByWeight "Section" "" }}
     <div class="jumbotron jumbotron-fluid glitch-background-none">
-      <div class="container text-sm-center">
+      <div class="container text-center">
         {{ .Content }}
       </div>
     </div>
